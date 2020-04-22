@@ -18,16 +18,11 @@ for (let i = 0; i < data.names.length; i++) {
       const metadata = data.metadata.filter(user => user.id == user_pick_value);
       $('#sample-metadata').append(`<p> id: ${metadata[0].id} </p>`);
       $('#sample-metadata').append(`<p> ethnicity: ${metadata[0].ethnicity} </p>`);
-      $('#sample-metadata').append(`<p> gender: ${metadata[0].id} </p>`);
-      $('#sample-metadata').append(`<p> age: ${metadata[0].id} </p>`);
-
-id: 955
-ethnicity: "Caucasian"
-gender: "F"
-age: 27
-location: "NewYork/NY"
-bbtype: "I"
-wfreq: 7
+      $('#sample-metadata').append(`<p> gender: ${metadata[0].gender} </p>`);
+      $('#sample-metadata').append(`<p> age: ${metadata[0].age} </p>`);
+      $('#sample-metadata').append(`<p> location: ${metadata[0].location} </p>`);
+      $('#sample-metadata').append(`<p> bbtype: ${metadata[0].bbtype} </p>`);
+      $('#sample-metadata').append(`<p> wfreq: ${metadata[0].wfreq} </p>`);
 
       console.log(metadata);
 
